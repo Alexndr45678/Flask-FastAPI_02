@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Authorization
+{% endblock %}
+
+{% block content %}
+  <h2 style="margin: 10px;">Введите ваше имя и электронную почту</h2>
+  <form action="/welcome" method="post" style="margin: 10px;">
+    <input type="text" name="name" placeholder="Имя" /><br />
+    <input type="email" name="email" placeholder="Электронная почта" /><br />
+    <input type="submit" value="Отправить" />
+  </form>
+{% endblock %}
